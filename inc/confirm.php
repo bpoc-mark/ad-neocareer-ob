@@ -14,7 +14,7 @@
     <meta property="og:site_name" content="">
     <meta property="og:description" content="" />
     <meta property="fb:app_id" content="">
-	<title>Adlive Template</title>
+	<title>Neo Career</title>
 	
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
