@@ -54,11 +54,11 @@ if( !empty($clean['btn_confirm'])) {
 		$header .= "Reply-To: hipetest@bpoc.co.jp\n";
 	
 		// 件名を設定
-		$auto_reply_subject = 'Neo Career';
+		$auto_reply_subject = '【お問い合わせありがとうございます】/ネオキャリア株式会社';
 	
 		// 本文を設定
 		$auto_reply_text =  $clean['f_name'] . " " . $clean['l_name'] . "様 \n\n";
-		$auto_reply_text .= "Neo Career \n\n";
+		$auto_reply_text .= "この度は、当サイトよりお問い合わせを頂きまして、誠にありがとうございます。\n 3営業日以内に担当より折り返しご連絡をいたしますので、今しばらくおまちくださいませ。\n\n";
 
 		$auto_reply_text .= "お問合せ内容: " . $clean['inquiry'] . "\n";
 		$auto_reply_text .= "会社名: " . $clean['company_name'] . "\n";
@@ -68,11 +68,13 @@ if( !empty($clean['btn_confirm'])) {
 		$auto_reply_text .= "役職: " . $clean['director'] . "\n";
 		$auto_reply_text .= "お問合せ内容詳細: " . nl2br($clean['content']) . "\n\n";
 		$auto_reply_text .= "---------------------------- \n";
+		$auto_reply_text .= "内容を確認の上、弊社担当者より追ってご連絡させていただきます。\n\n尚、お問い合わせの内容によってはお時間をいただく場合がございますのでご了承ください。\n";
 		$auto_reply_text .= "■本メールは送信専用メールです。\nご返信頂いてもお答えできませんのでご了承ください。\n";
 		$auto_reply_text .= "---------------------------- \n";
 		
-		$auto_reply_text .= "このメールに心当たりの無い場合は、お手数ですが下記連絡先までお問い合わせください。\n";
-		$auto_reply_text .= "Neo Career";
+		$auto_reply_text .= "株式会社ネオキャリア \n東京都新宿区西新宿1-22-2 新宿サンエービル\n03-6756-0433\n";
+
+		$auto_reply_text .= "---------------------------- \n";
 		
 		// テキストメッセージをセット
 		$body = "--__BOUNDARY__\n";
@@ -85,10 +87,10 @@ if( !empty($clean['btn_confirm'])) {
 	
 
 		// 運営側へ送るメールの件名
-		$admin_reply_subject = "Neo Career";
+		$admin_reply_subject = "【資料請求がありました】";
 	
 		// 本文を設定
-		$admin_reply_text = "Neo Career\n\n";
+		$admin_reply_text = "下記のお客様より資料請求がありました。\n 担当者は対応をお願いします\n\n";
 		$admin_reply_text .= "お問合せ内容: " . $clean['inquiry'] . "\n";
 		$admin_reply_text .= "会社名: " . $clean['company_name'] . "\n";
 		$admin_reply_text .= "氏名: " . $clean['f_name'] . " " . $clean['l_name'] . "\n";
@@ -98,7 +100,7 @@ if( !empty($clean['btn_confirm'])) {
 		$admin_reply_text .= "お問合せ内容詳細: " . nl2br($clean['content']) . "\n\n";
 		$admin_reply_text .= "---------------------------- \n\n";
 		$admin_reply_text .= "送信された日時：" . date("Y/m/d D H:i") . "\n";
-		$admin_reply_text .= "Neo Career";
+		// $admin_reply_text .= "Neo Career";
 		
 		// テキストメッセージをセット
 		$body = "--__BOUNDARY__\n";
