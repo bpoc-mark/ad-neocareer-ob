@@ -383,32 +383,111 @@
     </div>
 
     <main>
-        <section>
+        <section class="sect_11">
             <div class="space_5"></div>
-            <div class="space_10"></div>
-            <!-- Information -->
-            <div class="wrapper_90">
-                <div class="wrapper_100">
-                    <p class="view_pc txt_mg_0 font_150 txt_center black noto_bold line_h_200">この度はお問い合わせいただき誠にありがとうございます。
-                    </p>
-                    <p class="view_tabsp txt_mg_0 font_200 txt_center black noto_bold line_h_150">
-                        この度はお問い合わせいただき誠にありがとうございます。</p>
-                    <div class="space_5"></div>
-                    <p class="view_pc txt_mg_0 font_100 txt_center black noto_bold line_h_200">
-                        内容を確認の上、弊社担当者より追ってご連絡させていただきます。<br>尚、お問い合わせの内容によってはお時間をいただく場合がございますのでご了承ください。</p>
-                    <p class="view_tabsp txt_mg_0 font_100 txt_left black noto_bold line_h_200">
-                        内容を確認の上、弊社担当者より追ってご連絡させていただきます。<br>尚、お問い合わせの内容によってはお時間をいただく場合がございますのでご了承ください。</p>
-                    <div class="space_5"></div>
-                    <div class="cont_wrapper_50">
-                        <a class="view_pc square_btn noto_medium font_100 white width_50 mg_auto line_h_350 box_radius_5"
-                            type="button" href="/" style="background-color: #005cdc;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">トップページへ戻る</a>
-                        <a class="view_tabsp square_btn noto_medium font_100 white width_100 mg_auto line_h_350 box_radius_5"
-                            type="button" href="/" style="background-color: #005cdc;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">トップページへ戻る</a>
-                    </div>
+            <div class="space_5 view_pc"></div>
+            <div class="space_10 view_tabsp"></div>
+            <div class="form_width">
+                <div class="title">
+                    <img src="/image/sect_11/sect_11_title.svg" class="width_32 mg_auto view_pc" alt="">
+                    <img src="/image/sect_11/sect_11_title.svg" class="width_60 mg_auto view_tabsp" alt="">
+                    <div class="space_3"></div>
+                </div>
+                <div class="wrapper_95">
+                    <form method="post" action="#form" enctype="multipart/form-data" novalidate>
+                        <div class="flex form_group">
+                            <div class="c_width_25 txt_left">
+                                <label for="" class="noto_medium font_75 color_1">お問合せ内容</label>
+                            </div>
+                            <div class="c_width_75">
+                                <p class="font_75 txt_left black noto_bold txt_mg_0"><?php echo $clean['inquiry']; ?></p>
+                            </div>
+                        </div>
+                        <div class="space_1 view_tabsp"></div>
+                        <div class="flex form_group">
+                            <div class="c_width_25 txt_left">
+                                <div class="space_05 view_pc"></div>
+                                <label for="" class="noto_medium font_75 color_1">会社名 <span class="need noto_medium">必須</span></label>
+                            </div>
+                            <div class="c_width_75">
+                                <p class="font_75 txt_left black noto_bold line_h_200 txt_mg_0"><?php echo $clean['company_name']; ?></p>
+                            </div>
+                        </div>
+                        <div class="flex form_group">
+                            <div class="c_width_25 txt_left">
+                                <div class="space_05 view_pc"></div>
+                                <label for="" class="noto_medium font_75 color_1">氏名 <span class="need noto_medium">必須</span></label>
+                            </div>
+                            <div class="c_width_75">
+                                <p class="font_75 txt_left black noto_bold line_h_200 txt_mg_0"><?php echo $clean['f_name'] . ' ' . $clean['l_name']; ?></p>
+                            </div>
+                        </div>
+                        <div class="flex form_group">
+                            <div class="c_width_25 txt_left">
+                                <div class="space_05 view_pc"></div>
+                                <label for="" class="noto_medium font_75 color_1">メールアドレス <span class="need noto_medium">必須</span></label>
+                            </div>
+                            <div class="c_width_75">
+                                <p class="font_75 txt_left black noto_bold line_h_200 txt_mg_0"><?php echo $clean['email']; ?></p>
+                            </div>
+                        </div>
+                        <div class="space_1 view_tabsp"></div>
+                        <div class="flex form_group">
+                            <div class="c_width_25 txt_left">
+                                <div class="space_05 view_pc"></div>
+                                <label for="" class="noto_medium font_75 color_1">電話番号 <span class="need noto_medium">必須</span></label>
+                            </div>
+                            <div class="c_width_75">
+                            <p class="font_75 txt_left black noto_bold line_h_200 txt_mg_0"><?php echo $clean['tel1'] . ' ' .$clean['tel2'] . ' ' .$clean['tel3']; ?></p>
+                            </div>
+                        </div>
+                        <div class="space_1 view_tabsp"></div>
+                        <div class="flex form_group">
+                            <div class="c_width_25 txt_left">
+                                <label for="" class="noto_medium font_75 color_1">役職 <span></span></label>
+                            </div>
+                            <div class="c_width_75">
+                                <p class="font_75 txt_left black noto_bold line_h_200 txt_mg_0"><?php echo $clean['director']; ?></p>
+                            </div>
+                        </div>
+                        <div class="space_1 view_tabsp"></div>
+                        <div class="flex form_group">
+                            <div class="c_width_25 txt_left">
+                                <div class="space_05 view_pc"></div>
+                                <label for="" class="noto_medium font_75 color_1">お問合せ内容詳細 </label>
+                            </div>
+                            <div class="c_width_75">
+                            <p class="font_75 txt_left black noto_bold line_h_200 txt_mg_0"><?php echo $clean['content']; ?></p>
+                            </div>
+                        </div>
+                        <div class="space_2 view_pc"></div>
+                        <div class="btn_cont">
+                            <div class="view_pc">
+                                <input type="submit" name="btn_submit" class="square_btn noto_medium font_100 white width_50 mg_auto line_h_350 box_radius_5" value="送信する" style="background-color: #005cdc;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                                <div class="space_1"></div>
+                                <input type="submit" name="btn_back" class="square_btn noto_medium font_100 white width_50 mg_auto line_h_350 box_radius_5" value="入力画面に戻る" style="background-color: #ff9000;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                            </div>
+                            <div class="view_tabsp">
+                                <input type="submit" name="btn_submit" class="square_btn noto_medium font_100 white width_100 mg_auto line_h_350 box_radius_5" value="送信する" style="background-color: #005cdc;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                                <div class="space_1"></div>
+                                <input type="submit" name="btn_back" class="square_btn noto_medium font_100 white width_100 mg_auto line_h_350 box_radius_5" value="入力画面に戻る" style="background-color: #ff9000;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="inquiry" value="<?php echo $clean['inquiry']; ?>">
+                        <input type="hidden" name="company_name" value="<?php echo $clean['company_name']; ?>">
+                        <input type="hidden" name="f_name" value="<?php echo $clean['f_name']; ?>">
+                        <input type="hidden" name="l_name" value="<?php echo $clean['l_name']; ?>">
+                        <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
+                        <input type="hidden" name="tel1" value="<?php echo $clean['tel1']; ?>">
+                        <input type="hidden" name="tel2" value="<?php echo $clean['tel2']; ?>">
+                        <input type="hidden" name="tel3" value="<?php echo $clean['tel3']; ?>">
+                        <input type="hidden" name="director" value="<?php echo $clean['director']; ?>">
+                        <input type="hidden" name="content" value="<?php echo $clean['content']; ?>">
+                    </form>
                 </div>
             </div>
             <div class="space_5"></div>
-            <div class="space_10 view_tabsp"></div>
         </section>
     </main>
 
@@ -418,28 +497,7 @@
     </footer>
 
     <script>
-        
-    </script>
-
-    <script>
         $("html").easeScroll();
-
-        // $(document).ready(function(){
-        //     $('a[href*=#]:not([href=#])').click(function() {
-        //         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-        //             location
-        //             .hostname == this.hostname) {
-        //             var target = $(this.hash);
-        //             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        //             if (target.length) {
-        //                 $('html,body').animate({
-        //                     scrollTop: target.offset().top
-        //                 }, 1000);
-        //                 return false;
-        //             }
-        //         }
-        //     });
-        // });
     </script>
 
     <script>
@@ -478,6 +536,7 @@
         });
         
     </script>
+
 </body>
 
 </html>

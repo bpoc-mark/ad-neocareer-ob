@@ -61,17 +61,17 @@
 }
 
 .color_1{
-    color: #005cdc;
+    color: #005cdc !important;
 }
 
 .color_2{
-    color: #ff9000;
+    color: #ff9000 !important;
 }
 
 .bg_color_1{
-    background-color: #005cdc;
+    background-color: #005cdc !important;
 }
 
 .bg_color_2{
-    background-color: #ff9000;
+    background-color: #ff9000 !important;
 }

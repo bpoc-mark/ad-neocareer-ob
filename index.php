@@ -22,16 +22,6 @@ if( !empty($clean['btn_confirm'])) {
 
 	if( empty($error) ) {
 
-		if(empty($clean['date2'])) {
-			$clean['date2'] = "なし";
-			$clean['time2'] = "なし";
-		}
-
-		if(empty($clean['date3'])) {
-			$clean['date3'] = "なし";
-			$clean['time3'] = "なし";
-		}
-
 		$page_flag = 1;
 		// セッションの書き込み
 		session_start();
@@ -64,26 +54,25 @@ if( !empty($clean['btn_confirm'])) {
 		$header .= "Reply-To: hipetest@bpoc.co.jp\n";
 	
 		// 件名を設定
-		$auto_reply_subject = '無料カウンセリングご予約ありがとうございます｜MYSTIQU';
+		$auto_reply_subject = 'Neo Career';
 	
 		// 本文を設定
-		$auto_reply_text =  $clean['your_name'] . "様 \n\n";
-		$auto_reply_text .= "この度は無料カウンセリングのご予約をいただき誠にありがとうございます。\n以下の通りに承りました。\n内容をご確認の上、担当者より追ってご連絡させていただきますので\n今しばらくお待ち頂きますようお願い申し上げます。\n\n";
+		$auto_reply_text =  $clean['f_name'] . " " . $clean['l_name'] . "様 \n\n";
+		$auto_reply_text .= "Neo Career \n\n";
 
-		$auto_reply_text .= "お名前：" . $clean['your_name'] . "\n";
-		$auto_reply_text .= "フリガナ： " . $clean['furigana'] . "\n";
-		$auto_reply_text .= "メールアドレス： " . $clean['email'] . "\n";
-		$auto_reply_text .= "電話番号：" . $clean['tel'] . "\n";
-		$auto_reply_text .= "第1希望日：" . $clean['date1'] . " ".$clean['time1']."\n";
-		$auto_reply_text .= "第2希望日：" . $clean['date2'] . " " . $clean['time2'] . "\n";
-		$auto_reply_text .= "第3希望日：" . $clean['date3'] . " " . $clean['time3'] . "\n";
-		$auto_reply_text .= "お問い合わせ内容：" . nl2br($clean['contact']) . "\n\n";
+		$auto_reply_text .= "お問合せ内容: " . $clean['inquiry'] . "\n";
+		$auto_reply_text .= "会社名: " . $clean['company_name'] . "\n";
+		$auto_reply_text .= "氏名: " . $clean['f_name'] . " " . $clean['l_name'] . "\n";
+		$auto_reply_text .= "メールアドレス: " . $clean['email'] . "\n";
+		$auto_reply_text .= "電話番号: " . $clean['tel1'] ."-". $clean['tel2'] ."-". $clean['tel3'] ."\n";
+		$auto_reply_text .= "役職: " . $clean['director'] . "\n";
+		$auto_reply_text .= "お問合せ内容詳細: " . nl2br($clean['content']) . "\n\n";
 		$auto_reply_text .= "---------------------------- \n";
 		$auto_reply_text .= "■本メールは送信専用メールです。\nご返信頂いてもお答えできませんのでご了承ください。\n";
 		$auto_reply_text .= "---------------------------- \n";
 		
 		$auto_reply_text .= "このメールに心当たりの無い場合は、お手数ですが下記連絡先までお問い合わせください。\n";
-		$auto_reply_text .= "MYSTIQUE\nパーソナルジムミスティーク\n※連絡先後送\n";
+		$auto_reply_text .= "Neo Career";
 		
 		// テキストメッセージをセット
 		$body = "--__BOUNDARY__\n";
@@ -96,21 +85,20 @@ if( !empty($clean['btn_confirm'])) {
 	
 
 		// 運営側へ送るメールの件名
-		$admin_reply_subject = "MYSTIQUE（ミスティーク）サイトよりお問い合わせがありました。";
+		$admin_reply_subject = "Neo Career";
 	
 		// 本文を設定
-		$admin_reply_text = "MYSTIQUE（ミスティーク）サイトより、問い合わせがありました。\n送信内容は以下です。\n\n";
-		$admin_reply_text .= "お名前：" . $clean['your_name'] . "\n";
-		$admin_reply_text .= "フリガナ： " . $clean['furigana'] . "\n";
-		$admin_reply_text .= "メールアドレス：" . $clean['email'] . "\n";
-		$admin_reply_text .= "電話番号：" . $clean['tel'] . "\n";
-		$admin_reply_text .= "第1希望日：" . $clean['date1'] . " " . $clean['time1'] . "\n";
-		$admin_reply_text .= "第2希望日：" . $clean['date2'] . " " . $clean['time2'] . "\n";
-		$admin_reply_text .= "第3希望日：" . $clean['date3'] . " " . $clean['time3'] . "\n";
-		$admin_reply_text .= "お問い合わせ内容：" . nl2br($clean['contact']) . "\n";
+		$admin_reply_text = "Neo Career\n\n";
+		$admin_reply_text .= "お問合せ内容: " . $clean['inquiry'] . "\n";
+		$admin_reply_text .= "会社名: " . $clean['company_name'] . "\n";
+		$admin_reply_text .= "氏名: " . $clean['f_name'] . " " . $clean['l_name'] . "\n";
+		$admin_reply_text .= "メールアドレス: " . $clean['email'] . "\n";
+		$admin_reply_text .= "電話番号: " . $clean['tel1'] ."-". $clean['tel2'] ."-". $clean['tel3'] ."\n";
+		$admin_reply_text .= "役職: " . $clean['director'] . "\n";
+		$admin_reply_text .= "お問合せ内容詳細: " . nl2br($clean['content']) . "\n\n";
 		$admin_reply_text .= "---------------------------- \n\n";
 		$admin_reply_text .= "送信された日時：" . date("Y/m/d D H:i") . "\n";
-		$admin_reply_text .= "MYSTIQUE（ミスティーク）サイト";
+		$admin_reply_text .= "Neo Career";
 		
 		// テキストメッセージをセット
 		$body = "--__BOUNDARY__\n";
@@ -127,19 +115,19 @@ if( !empty($clean['btn_confirm'])) {
 }
 function validation($data) {
 	$error = array();
-	// 氏名のバリデーション
-	if( empty($data['your_name']) ) {
-		$error['your_name'] = "「お名前」は入力必須項目です。";
-	} elseif( 20 < mb_strlen($data['your_name']) ) {
-		$error['your_name'] = "20文字以内で入力してください。";
+
+	// Company name validation
+	if( empty($data['company_name']) ) {
+		$error['company_name'] = "「会社名」は入力必須項目です。";
+	} elseif( 20 < mb_strlen($data['company_name']) ) {
+		$error['company_name'] = "20文字以内で入力してください。";
 	}
 
-	// ふりがな検証
-	if( empty($data['furigana']) ) {
-		$error['furigana'] = "「フリガナ」は入力必須項目です。";
-	} 
-	elseif( 20 < mb_strlen($data['furigana']) ) {
-		$error['furigana'] = "20文字以内で入力してください。";
+	// 氏名のバリデーション
+	if( empty($data['f_name']) || empty($data['l_name'])) {
+		$error['fullname'] = "「氏名」は入力必須項目です。";
+	} elseif( 20 < mb_strlen($data['f_name']) || 20 < mb_strlen($data['l_name'])) {
+		$error['fullname'] = "20文字以内で入力してください。";
 	}
 
 	// メールアドレスのバリデーション//
@@ -150,19 +138,17 @@ function validation($data) {
 	}
 
 	// 電話番号のバリデーション
-	if( empty($data['tel']) ) {
+	if( empty($data['tel1']) || empty($data['tel2']) || empty($data['tel3']) ) {
 		$error['tel'] = "「電話番号」は入力必須項目です。";
-	} elseif( !preg_match( '/^[0-9]+[0-9.-]+$/', $data['tel']) ) {
+	} elseif( !preg_match( '/^[0-9]+[0-9.-]+$/', $data['tel1']) || !preg_match( '/^[0-9]+[0-9.-]+$/', $data['tel2']) || !preg_match( '/^[0-9]+[0-9.-]+$/', $data['tel3'])) {
 		$error['tel'] = "正しい形式で入力してください。";
 	}
 
-	// 日付の検証
-	if( empty($data['date1']) ) {
-		$error['date1'] = "「日付」は必須項目です。";
-	}
-	
-	if( empty($data['time1']) ) {
-		$error['time1'] = "「時間」は必須項目です。";
+	// // 氏名のバリデーション
+	if( empty($data['content']) ) {
+		$error['content'] = "「お問合せ内容詳細」は入力必須項目です。";
+	} elseif( 300 < mb_strlen($data['content']) ) {
+		$error['content'] = "20文字以内で入力してください。";
 	}
 
 	return $error;
