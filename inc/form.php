@@ -1207,7 +1207,7 @@
                             <div class="space_05"></div>
                             <div class="wrapper_100 bg_img">
                                 <img src="/image/sect_9/sect_9_img_1.png" class="width_80 mg_auto" alt="">
-                                <img src="/image/sect_9/sect_9_float_img_1.png" class="bl_0 width_35" alt="" style="left: -5%;bottom: -5%;">
+                                <img src="/image/sect_9/sect_9_float_img_1.png" class="bl_0 width_35" alt="ご提案 お見積り 無料" style="left: -5%;bottom: -5%;">
                             </div>
                             <div class="space_1"></div>
                             <p class="noto_bold color_1" style="font-size: 1.2vw;">ヒアリング・お見積り</p>
@@ -1220,7 +1220,7 @@
                             <div class="space_05"></div>
                             <div class="wrapper_100 bg_img">
                                 <img src="/image/sect_9/sect_9_img_2.png" class="width_80 mg_auto" alt="">
-                                <img src="/image/sect_9/sect_9_float_img_2.png" class="bl_0 width_35" alt="" style="left: -5%;bottom: -5%;">
+                                <img src="/image/sect_9/sect_9_float_img_2.png" class="bl_0 width_35" alt="徹底的な 擦り合わせ" style="left: -5%;bottom: -5%;">
                             </div>
                             <div class="space_1"></div>
                             <p class="noto_bold color_1" style="font-size: 1.2vw;">チーム編成・業務擦り合わせ</p>
@@ -1232,7 +1232,7 @@
                             <div class="space_05"></div>
                             <div class="wrapper_100 bg_img">
                                 <img src="/image/sect_9/sect_9_img_3.png" class="width_80 mg_auto" alt="">
-                                <img src="/image/sect_9/sect_9_float_img_3.png" class="bl_0 width_35" alt="" style="left: -5%;bottom: -5%;">
+                                <img src="/image/sect_9/sect_9_float_img_3.png" class="bl_0 width_35" alt="およそ 10営業日～ スタート" style="left: -5%;bottom: -5%;">
                             </div>
                             <div class="space_1"></div>
                             <p class="noto_bold color_1" style="font-size: 1.2vw;">業務開始</p>
@@ -1255,7 +1255,7 @@
                             <div class="b0_l50 " style="border-top: 10px solid #005cdc;border-left: 15px solid transparent;border-bottom: 10px solid transparent;border-right: 15px solid transparent;"></div>
                             <div class="width_80 bg_img mg_auto">
                                 <img src="/image/sect_9/sect_9_img_1.png" class="width_100" alt="ヒアリング・お見積り">
-                                <img src="/image/sect_9/sect_9_float_img_1.png" class="bl_0 width_35" alt="" style="left: -5%;bottom: -12%;">
+                                <img src="/image/sect_9/sect_9_float_img_1.png" class="bl_0 width_35" alt="ご提案 お見積り 無料" style="left: -5%;bottom: -12%;">
                             </div>
                             <div class="space_1"></div>
                             <p class="oswald_bold font_200">STEP 1</p>
@@ -1270,7 +1270,7 @@
                             <div class="b0_l50 " style="border-top: 10px solid #005cdc;border-left: 15px solid transparent;border-bottom: 10px solid transparent;border-right: 15px solid transparent;"></div>
                             <div class="width_80 bg_img mg_auto">
                                 <img src="/image/sect_9/sect_9_img_2.png" class="width_100" alt="チーム編成・業務擦り合わせ">
-                                <img src="/image/sect_9/sect_9_float_img_2.png" class="bl_0 width_35" alt="" style="left: -5%;bottom: -12%;">
+                                <img src="/image/sect_9/sect_9_float_img_2.png" class="bl_0 width_35" alt="徹底的な 擦り合わせ" style="left: -5%;bottom: -12%;">
                             </div>
                             <div class="space_1"></div>
                             <p class="oswald_bold font_200">STEP 2</p>
@@ -1284,7 +1284,7 @@
                         <div class="wrapper_100 bg_img">
                             <div class="width_80 bg_img mg_auto">
                                 <img src="/image/sect_9/sect_9_img_3.png" class="width_100" alt="チーム編成・業務擦り合わせ">
-                                <img src="/image/sect_9/sect_9_float_img_3.png" class="bl_0 width_35" alt="" style="left: -5%;bottom: -12%;">
+                                <img src="/image/sect_9/sect_9_float_img_3.png" class="bl_0 width_35" alt="およそ 10営業日～ スタート" style="left: -5%;bottom: -12%;">
                             </div>
                             <div class="space_1"></div>
                             <p class="oswald_bold font_200">STEP 3</p>
