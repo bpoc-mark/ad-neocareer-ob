@@ -79,6 +79,12 @@ header{
         @media only screen and (max-width: 1050px) {
             margin-bottom: 5vw !important;
         }
+
+        .font_75{
+            @media only screen and (max-width: 1050px) {
+                font-size: 4.2vw !important;
+            }
+        }
         
         .checkbox-wrap{
             display: flex;
@@ -97,8 +103,8 @@ header{
                     height: 1.2vw;
                     @media only screen and (max-width: 1050px) {
                         margin-right: .5vw;
-                        width: 4vw;
-                        height: 4vw;
+                        width: 4.2vw;
+                        height: 4.2vw;
                     }
                 }
             }
@@ -134,7 +140,7 @@ header{
             padding: 0.5vw 1vw;
             color: #717171;
             @media only screen and (max-width: 1050px) {
-                font-size: 3vw;
+                font-size: 4.2vw;
                 padding: 3vw;
             }
         }

@@ -821,7 +821,7 @@
                             <img src="/image/sect_5/sect_5_img_4.jpg" class="width_100" alt="最短10営業日～で運用開始できるスピード感">
                         </div>
                         <div class="width_100 txt_lpad_2 txt_rpad_2 txt_bpad_2 txt_tpad_1">
-                            <h3 class="noto_bold txt_left color_1" style="line-height: 150%;font-size: 4.8vw;">徹底した情報管理とセキュリティ対策</h3>
+                            <h3 class="noto_bold txt_left color_1" style="line-height: 150%;font-size: 4.5vw;">徹底した情報管理とセキュリティ対策</h3>
                             <div class="space_1"></div>
                             <p class="noto_regular txt_left" style="line-height: 170%;text-align: justify;font-size: 3.3vw;">営業のアウトバウンド代行を発注する際に、情報漏洩などのリスクを心配される企業様は多くございます。ネオキャリアでは業務に関わる全てのスタッフに個人情報に関する研修や、覚書、秘密保持契約の締結など、非常に高いレベルのセキュリティ対策を実施しております。</p>
                         </div>

@@ -95,6 +95,12 @@ header.isActive .view_tabsp .menu_cont {
   }
 }
 
+@media only screen and (max-width: 1050px) {
+  .form_width .form_group .font_75 {
+    font-size: 4.2vw !important;
+  }
+}
+
 .form_width .form_group .checkbox-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -122,8 +128,8 @@ header.isActive .view_tabsp .menu_cont {
 @media only screen and (max-width: 1050px) {
   .form_width .form_group .checkbox-wrap .checkbox-wrap-item input[type=radio] {
     margin-right: .5vw;
-    width: 4vw;
-    height: 4vw;
+    width: 4.2vw;
+    height: 4.2vw;
   }
 }
 
@@ -177,7 +183,7 @@ header.isActive .view_tabsp .menu_cont {
 
 @media only screen and (max-width: 1050px) {
   .form_width .form_group input, .form_width .form_group textarea {
-    font-size: 3vw;
+    font-size: 4.2vw;
     padding: 3vw;
   }
 }
