@@ -497,7 +497,7 @@
     </footer>
 
     <script>
-        $("html").easeScroll();
+        // $("html").easeScroll();
     </script>
 
     <script>
