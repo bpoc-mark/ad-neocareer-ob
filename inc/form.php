@@ -626,7 +626,7 @@
                 <div class="space_5"></div>
                 <div class="wrapper_35">
                     <div class="title">
-                        <img src="/image/sect_4/sect_4_title.svg" class="width_100 mg_auto" alt="質」を重視したアウトバウンドをお探しの方へ">
+                        <img src="/image/sect_4/sect_4_title.svg" class="width_100 mg_auto" alt="「質」を重視したアウトバウンドをお探しの方へ">
                         <div class="space_3"></div>
                     </div>
                     <div class="wrapper_95">
@@ -661,7 +661,7 @@
                 <div class="space_5"></div>
                 <div class="wrapper_90">
                     <div class="title">
-                        <img src="/image/sect_4/sect_4_title.svg" class="width_100 mg_auto" alt="質」を重視したアウトバウンドをお探しの方へ">
+                        <img src="/image/sect_4/sect_4_title.svg" class="width_100 mg_auto" alt="「質」を重視したアウトバウンドをお探しの方へ">
                         <div class="space_4"></div>
                     </div>
                     <div class="wrapper_100">
@@ -1718,7 +1718,7 @@
     </script>
 
     <script>
-        $("html").easeScroll();
+        // $("html").easeScroll();
     </script>
 
     <script>
