@@ -1639,13 +1639,13 @@
                                     <div class="width_30">
                                         <input type="text" id="tel2" name="tel2" value="<?php if (!empty($clean['tel2'])) {
                                                                                     echo $clean['tel2'];
-                                                                                } ?>" maxlength="3" class="width_100 box_radius_5" placeholder="">
+                                                                                } ?>"  class="width_100 box_radius_5" placeholder="">
                                     </div>
                                     -
                                     <div class="width_30">
                                         <input type="text" id="tel3" name="tel3" value="<?php if (!empty($clean['tel3'])) {
                                                                                     echo $clean['tel3'];
-                                                                                } ?>" maxlength="4" class="width_100 box_radius_5" placeholder="">
+                                                                                } ?>"  class="width_100 box_radius_5" placeholder="">
                                     </div>
                                 </div>
                                 <div class="width_100">
