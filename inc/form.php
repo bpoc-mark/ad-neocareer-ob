@@ -284,6 +284,22 @@
         .slick-slide {
             margin: 0 .3%;
         }
+
+        .btn_link1{
+            transition: .3s ease-in-out;
+            background-color: #ff9000;
+        }
+        .btn_link1:hover{
+            background-color: #F26D00;
+        }
+
+        .btn_link2{
+            transition: .3s ease-in-out;
+            background-color: #005cdc;
+        }
+        .btn_link2:hover{
+            background-color: #043CB7;
+        }
     </style>
 
 </head>
@@ -301,7 +317,7 @@
                         </h1>
                     </div>
                     <div class="width_28">
-                        <a href="/#sect_11" class="square_btn noto_medium width_100 font_100 white line_h_300 box_radius_5" style="background-color: #ff9000;">
+                        <a href="/#sect_11" class="square_btn noto_medium width_100 font_100 white line_h_300 box_radius_5 btn_link1">
                             お問合せ・資料請求
                         </a>
                     </div>
@@ -403,12 +419,12 @@
                     <div class="width_40 br_0" style="right: 2%;bottom: 1%;">
                         <div class="flex" style="justify-content: space-between;">
                             <div class="width_49">
-                                <a href="/#sect_11" class="square_btn width_100 white noto_medium font_75 line_h_350 box_radius_5" style="background-color: #ff9000;">
+                                <a href="/#sect_11" class="square_btn width_100 white noto_medium font_75 line_h_350 box_radius_5 btn_link1">
                                     お問合せ
                                 </a>
                             </div>
                             <div class="width_49">
-                                <a href="" class="square_btn width_100 white noto_medium font_75 line_h_350 box_radius_5" style="background-color: #ff9000;">
+                                <a href="" class="square_btn width_100 white noto_medium font_75 line_h_350 box_radius_5 btn_link1">
                                     <img src="/image/sect_1/dl_icon.svg" class="width_6" alt="">
                                     資料ダウンロード
                                 </a>
@@ -831,15 +847,17 @@
             </div>
         </section>
         <section class="sect_6">
-            <div class="view_pc">
+            <div class="view_pc" style="position: relative;z-index:5;">
                 <div class="space_5"></div>
                 <div class="wrapper_55">
                     <div class="title">
                         <img src="/image/sect_6/sect_6_title.svg" class="width_35 mg_auto" alt="簡単入力1分！">
                     </div>
                     <div class="wrapper_75">
-                        <a href="/#sect_11" class="square_btn">
-                            <img src="/image/sect_6/btn_img.png" alt="お問合せはこちら">
+                        <div class="space_05"></div>
+                        <a href="/#sect_11" class="square_btn btn_link1 font_125 noto_bold white line_h_350 box_radius_5" style="letter-spacing: .1em;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                            お問合せはこちら
+                            <img src="/image/sect_6/sect_6_btn_arrow.svg" alt="" style="width: 1.5%;">
                         </a>
                     </div>
                 </div>
@@ -951,8 +969,8 @@
                     </div>
                     <div class="wrapper_55">
                         <div class="space_4"></div>
-                        <a href="" class="square_btn">
-                            <img src="/image/sect_7/btn_img.png" alt="導入事例集をダウンロード">
+                        <a href="#sect_11" class="square_btn btn_link2 noto_medium font_100 white line_h_300 box_radius_5" style="letter-spacing: .1em;    box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                            導入事例集をダウンロード
                         </a>
                     </div>
                 </div>
@@ -1091,7 +1109,7 @@
                     </div>
                     <div class="wrapper_100">
                         <div class="space_2"></div>
-                        <a href="" class="square_btn">
+                        <a href="#sect_11" class="square_btn">
                             <img src="/image/sect_7/sp/btn_img.png" alt="導入事例集をダウンロード">
                         </a>
                     </div>
@@ -1303,7 +1321,7 @@
             </div>
         </section>
         <section class="sect_10" id="sect_10">
-            <div class="view_pc" style="padding-top: 10vw;margin-top:-10vw;">
+            <div class="view_pc" style="padding-top: 10vw;margin-top:-10vw; position: relative; z-index: 10;">
                 <div class="wrapper_55">
                     <div class="space_5"></div>
                     <div class="wrapper_95">
@@ -1327,7 +1345,7 @@
                                         <img src="/image/sect_10/a_icon.svg" class="width_100" alt="A">
                                     </div>
                                     <div class="width_90">
-                                        <p class="font_75 txt_left noto_regular">はい。ネオキャリアでは企業様のご要望に応じてカスタマイズしたターゲット選定を行い、<br>企業様専用の営業リストをご提案いたします。</p>
+                                        <p class="txt_left noto_regular" style="font-size: .89vw;">はい。ネオキャリアでは企業様のご要望に応じてカスタマイズしたターゲット選定を行い、<br>企業様専用の営業リストをご提案いたします。</p>
                                     </div>
                                 </div>
                             </div>
@@ -1347,7 +1365,7 @@
                                         <img src="/image/sect_10/a_icon.svg" class="width_100" alt="A">
                                     </div>
                                     <div class="width_90">
-                                        <p class="font_75 txt_left noto_regular">はい。スポット的に期間限定のご依頼も承っております。<br>契約期間の縛りが無いため、必要都度・発生都度、業務依頼が出来ます。</p>
+                                        <p class="txt_left noto_regular" style="font-size: .89vw;">はい。スポット的に期間限定のご依頼も承っております。<br>契約期間の縛りが無いため、必要都度・発生都度、業務依頼が出来ます。</p>
                                     </div>
                                 </div>
                             </div>
@@ -1367,7 +1385,7 @@
                                         <img src="/image/sect_10/a_icon.svg" class="width_100" alt="A">
                                     </div>
                                     <div class="width_90">
-                                        <p class="font_75 txt_left noto_regular">ご依頼後の仕様確認ミーティングから始まり、運用開始前には営業内容（トークスクリプト）のすり合わせ、<br>
+                                        <p class="txt_left noto_regular" style="font-size: .89vw;">ご依頼後の仕様確認ミーティングから始まり、運用開始前には営業内容（トークスクリプト）のすり合わせ、<br>
                                             運用期間中には改善提案、運用後はレポーティングと今後の戦略的な提案等、密なコミュニケーションを取らせて頂き<br>
                                             アウトバウンドの精度を高めるよう努めております。</p>
                                     </div>
@@ -1389,7 +1407,7 @@
                                         <img src="/image/sect_10/a_icon.svg" class="width_100" alt="A">
                                     </div>
                                     <div class="width_90">
-                                        <p class="font_75 txt_left noto_regular">IT・ソフトウェア業界などのご依頼実績もあり、業界知識がある担当が対応をさせていただきます。<br>
+                                        <p class="txt_left noto_regular" style="font-size: .89vw;">IT・ソフトウェア業界などのご依頼実績もあり、業界知識がある担当が対応をさせていただきます。<br>
                                             （ネオキャリアグループでもWeb業種の会社を保有しておりIT業界知識の研修も随時実施しております）</p>
                                     </div>
                                 </div>
@@ -1401,8 +1419,10 @@
                                 <img src="/image/sect_6/sect_6_title.svg" class="width_40 mg_auto" alt="簡単入力1分！">
                             </div>
                             <div class="wrapper_90">
-                                <a href="#sect_11" class="square_btn">
-                                    <img src="/image/sect_6/btn_img.png" alt="お問合せはこちら">
+                                <div class="space_05"></div>
+                                <a href="/#sect_11" class="square_btn btn_link1 font_125 noto_bold white line_h_350 box_radius_5" style="letter-spacing: .1em;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                                    お問合せはこちら
+                                    <img src="/image/sect_6/sect_6_btn_arrow.svg" alt="" style="width: 1.5%;">
                                 </a>
                             </div>
                         </div>
@@ -1695,10 +1715,10 @@
                         <div class="space_2 view_pc"></div>
                         <div class="btn_cont">
                             <div class="view_pc">
-                                <input type="submit" name="btn_confirm" class="square_btn noto_medium font_100 white width_50 mg_auto line_h_350 box_radius_5" value="入力内容を確認する" style="background-color: #005cdc;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                                <input type="submit" name="btn_confirm" class="square_btn noto_medium font_100 white width_50 mg_auto line_h_350 box_radius_5 btn_link2" value="入力内容を確認する" style="box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
                             </div>
                             <div class="view_tabsp">
-                                <input type="submit" name="btn_confirm" class="square_btn noto_medium font_100 white width_100 mg_auto line_h_350 box_radius_5" value="入力内容を確認する" style="background-color: #005cdc;box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
+                                <input type="submit" name="btn_confirm" class="square_btn noto_medium font_100 white width_100 mg_auto line_h_350 box_radius_5 btn_link2" value="入力内容を確認する" style="box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
                             </div>
                         </div>
                     </form>
