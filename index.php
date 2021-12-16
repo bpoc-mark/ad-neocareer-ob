@@ -153,6 +153,10 @@ function validation($data) {
 		$error['content'] = "20文字以内で入力してください。";
 	}
 
+	// // 氏名のバリデーション
+	if( empty($data['privacy']) ) {
+		$error['privacy'] = "「プライバシーポリシー」は入力必須項目です。";
+	} 
 	return $error;
 }
 ?>

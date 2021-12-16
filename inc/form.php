@@ -300,6 +300,20 @@
         .btn_link2:hover{
             background-color: #043CB7;
         }
+
+        .privacy_check{
+            width: 1.2vw;
+            height: 1.2vw;
+            margin-right: 0.3vw;
+            
+        }
+        @media only screen and (max-width: 1050px) {
+            .privacy_check{
+                margin-right: 3vw;
+                width: 5vw;
+                height: 5vw;
+            }
+        }
     </style>
 
 </head>
@@ -1712,7 +1726,22 @@
                                 <textarea name="content" cols="30" rows="10" class="width_100 box_radius_5"><?php if (!empty($clean['content'])) {echo $clean['content'];} ?></textarea>
                             </div>
                         </div>
-                        <div class="space_2 view_pc"></div>
+                        <div class="space_2 view_tabsp"></div>
+                        <div class="privacy">
+                            <label for="" class="font_75" style="display:flex; align-items: center;justify-content:center;">
+                                <input type="checkbox" name="privacy" class="privacy_check">
+                                <a href="https://www.neo-career.co.jp/policy/" class="view_pc" target="_blank" style="color: #005cdc;">プライバシーポリシー<span class="black">に同意の上、お問い合わせください。</span></a>
+                                <a href="https://www.neo-career.co.jp/policy/" class="view_tabsp txt_left" target="_blank" style="color: #005cdc;">プライバシーポリシー<br class="view_tabsp"><span class="black">に同意の上、お問い合わせください。</span></a>
+                            </label>
+                            <div class="width_100 txt_center">
+                                    <?php if (!empty($error['privacy'])) : ?>
+                                        <p class="error_msg bold txt_center font_75" style="margin: 0 0 0 auto; padding-top: 5px;">
+                                            <?php echo $error['privacy']; ?></p>
+                                    <?php endif; ?>
+                                </div>
+                        </div>
+                        <div class="space_2 view_tabsp"></div>
+                        <div class="space_2"></div>
                         <div class="btn_cont">
                             <div class="view_pc">
                                 <input type="submit" name="btn_confirm" class="square_btn noto_medium font_100 white width_50 mg_auto line_h_350 box_radius_5 btn_link2" value="入力内容を確認する" style="box-shadow: 5px 5px 11px -1px rgb(0 0 0 / 34%);">
